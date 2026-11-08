@@ -1,0 +1,10 @@
+{
+  "description": "Manage a family money pool with AI-assisted payments, shared approvals, loans, and transparent spending controls for families across borders.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
