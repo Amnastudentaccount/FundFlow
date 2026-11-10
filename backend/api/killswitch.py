@@ -16,7 +16,13 @@ def pause_agent(session: Session = Depends(get_session)):
         m.status = "REVOKED"
         session.add(m)
         
-    log = TrustLog(actor="Ayesha", action="KILL SWITCH ACTIVATED", rule_used="Manual Override", reason="User paused AI")
+    log = TrustLog(
+        actor="Human",
+        action="Kill Switch Activated",
+        amount=0,
+        rule_used="Manual Override",
+        reason="FROZEN",
+    )
     session.add(pool)
     session.add(log)
     session.commit()
